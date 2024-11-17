@@ -42,7 +42,11 @@ img {
 .page-header {
   display: block;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
 }
+
 .header-container {
   display: flex;
   align-items: center;
@@ -174,11 +178,12 @@ img {
   border: 0px;
   text-align: center;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-hero .hero-button:hover,
 .section-hero .hero-button:focus {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 
 /* #endregion Hero */
@@ -295,7 +300,7 @@ img {
   background-color: #404bbf;
 }
 .social-icon {
-  fill: #fff;
+  fill: #f4f4fd;
 }
 .team-subtitle {
   font-weight: 500;
@@ -350,10 +355,13 @@ img {
   color: #f4f4fd;
   background-color: #4d5ae5;
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-card:hover .overlay {
   transform: translateY(0);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .portfolio-title {
   font-size: 36px;
