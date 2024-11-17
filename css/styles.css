@@ -425,15 +425,25 @@ img {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .div-logo-footer {
   margin-right: 120px;
 }
 .div-social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
   margin-bottom: 16px;
 }
 .div-social-footer .social-list {
   gap: 16px;
+}
+.div-social-footer .social-link:hover,
+.div-social-footer .social-link:focus {
+  background-color: #31d0aa;
 }
 
 /* #endregion Features */
